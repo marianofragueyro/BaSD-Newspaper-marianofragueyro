@@ -85,6 +85,7 @@ a :visited {
   height: 90%;
   margin: 5px;
   padding: 2px;
+  background-color: #f7efed;
   border-right: solid #8e0a3c 2px;
 }
 .subTitles {
@@ -97,7 +98,6 @@ a :visited {
   justify-content: space-around;
   width: 100%;
   height: 104px;
-  background-color: teal;
 }
 .spam {
   border: 2px solid black;
@@ -116,7 +116,7 @@ a :visited {
   text-align: center;
   font-family: "Oswald", sans-serif;
   font-size: 1em;
-  border-bottom: solid #8e0a3c 2px;
+  border-bottom: solid #837c7f 2px;
 }
 footer {
   display: flex;
@@ -142,10 +142,22 @@ footer {
 /* Tablet screen code */
 
 @media only screen and (min-width: 600px) {
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background-color: #450932;
+    height: 30px;
+  }
+  .navBtn {
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 0px;
+    color: #fff;
+    border-left: #f7efed solid 2px;
+  }
   .principal {
     width: 65%;
     flex-wrap: wrap;
-    background-color: yellow;
   }
   .container {
     display: flex;
@@ -154,7 +166,17 @@ footer {
   .secondary {
     flex-direction: column;
     width: 35%;
-    height: 60vh;
+    height: 57.5vh;
+    border-bottom: solid #8e0a3c 3px;
+  }
+  .box {
+    border-left: solid #8e0a3c 2px;
+    width: 90%;
+    margin: 5px;
+    padding-left: 9px;
+  }
+  .image {
+    width: 70%;
   }
   .title {
     color: black;
@@ -165,19 +187,27 @@ footer {
     height: 20vh;
     background-color: teal;
   }
-  nav {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    background-color: salmon;
-    height: 30px;
+  .ads {
+    padding-top: 5px;
+    height: 25vh;
   }
-  .box {
-    display: flex;
-    width: 90%;
-    height: 200px;
-    margin: 5px;
-    background-color: whitesmoke;
+  .spam {
+    border: 2px solid black;
+    width: 50%;
+    height: 220px;
+  }
+  .moreNews {
+    width: 100%;
+    background-color: #f7efed;
+  }
+  .boxList {
+    width: 95%;
+    height: 9vh;
+    border-bottom: solid #8e0a3c 3px;
+  }
+  .moreImg {
+    width: 25%;
+    padding: 2px;
   }
 }
 
