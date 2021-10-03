@@ -1,24 +1,75 @@
-/* Mobile first style */
-
-/* Mobile screen code*/
-header {
+.headBar {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 56px;
-  background-color: #fff;
+  background-color: #8e0a3c;
 }
-.title {
+h1 {
+  color: #fff;
+}
+button {
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+}
+.headBtn {
+  display: flex;
+  justify-content: space-around;
+  width: 120px;
+}
+.sign {
+  color: #fff;
+  background-color: #450932;
+}
+.search {
+  width: 25px;
+}
+.navMenu {
+  margin-left: 5px;
+  color: #fff;
+  font-size: 20px;
+}
+nav {
+  display: none;
+}
+.image {
   width: 100%;
-  color: blue;
-  font-size: 26px;
-  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a :visited {
+  text-decoration: none;
+  color: inherit;
 }
 .principal {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  position: relative;
   width: 100%;
-  height: 75vh;
-  background-color: yellow;
+  background-color: #f7efed;
+  border-bottom: solid #8e0a3c 3px;
+}
+.imageMain {
+  width: 95%;
+  margin-top: 25px;
+}
+.title {
+  color: black;
+  font-family: "Oswald", sans-serif;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.subText {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  margin-bottom: 5px;
+  text-align: center;
 }
 .secondary {
   display: flex;
@@ -26,25 +77,73 @@ header {
   align-items: center;
   width: 100%;
   height: 20vh;
-  background-color: red;
+  background-color: #f7efed;
 }
+.box {
+  align-self: center;
+  width: 30%;
+  height: 90%;
+  margin: 5px;
+  padding: 2px;
+  border-right: solid #8e0a3c 2px;
+}
+.subTitles {
+  font-family: "Oswald", sans-serif;
+  font-size: 1em;
+}
+
 .ads {
-  width: 100%;
-  height: 20vh;
-  background-color: chartreuse;
-}
-.rest{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   width: 100%;
-  height: 20vh;
+  height: 104px;
   background-color: teal;
+}
+.spam {
+  border: 2px solid black;
+  width: 50%;
+  height: 100px;
+}
+.moreNews {
+  height: 45vh;
+  padding: 2px;
+  background-color: #f7efed;
+}
+.boxList {
+  display: flex;
+  height: 75px;
+  margin: 10px;
+  text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 1em;
+  border-bottom: solid #8e0a3c 2px;
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 6vh;
+  background-color: #7d7576;
+}
+.socialMedia {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+  background-color: transparent;
+}
+.icon {
+  width: 25px;
+}
+.moreImg {
+  width: 25%;
+  padding: 2px;
 }
 /* Tablet screen code */
 
 @media only screen and (min-width: 600px) {
   .principal {
-    width: 50%;
+    width: 65%;
     flex-wrap: wrap;
     background-color: yellow;
   }
@@ -53,57 +152,75 @@ header {
     flex-wrap: wrap;
   }
   .secondary {
-    width: 50%;
-    height: 75vh;
+    flex-direction: column;
+    width: 35%;
+    height: 60vh;
   }
   .title {
     color: black;
     font-size: 30px;
   }
-  .rest{
+  .rest {
     width: 100%;
-    height: 75vh;
+    height: 20vh;
     background-color: teal;
+  }
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    background-color: salmon;
+    height: 30px;
+  }
+  .box {
+    display: flex;
+    width: 90%;
+    height: 200px;
+    margin: 5px;
+    background-color: whitesmoke;
   }
 }
 
 /* Computer screen code */
 
 @media only screen and (min-width: 950px) {
-
   .title {
     color: green;
     font-size: 45px;
   }
   .principal {
-    width: 40%;
+    width: 60%;
+    height: 75vh;
+    order: 2;
     flex-wrap: wrap;
-    background-color: purple;
+    background-color: yellow;
   }
   .container {
     display: flex;
     flex-wrap: wrap;
   }
   .secondary {
-    width: 40%;
+    width: 20%;
     height: 75vh;
+    order: 1;
   }
   .title {
     color: black;
     font-size: 30px;
   }
-  .rest{
-  width: 20%;
-  height: 75vh;
-  background-color: teal;
+  .rest {
+    order: 3;
+    width: 20%;
+    height: 75vh;
+    background-color: teal;
+  }
+  footer {
+    order: 4;
+    width: 100%;
+    height: 10vh;
+    background-color: chartreuse;
+  }
+  .spam {
+    display: none;
   }
 }
-
-
-/*.container {
-/*  display: flex;
-/*  flex-wrap: wrap;
-/*  flex-direction: row-reverse;
-/*  justify-content: space-around;
-/*}
-/*
