@@ -5,6 +5,10 @@
   height: 56px;
   background-color: #8e0a3c;
 }
+h2 {
+  font-size: 12px;
+  color: #fff;
+}
 h1 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 20px;

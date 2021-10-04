@@ -15,4 +15,4 @@ The idea of the layout was to add more content to the website as your viewport e
 
 Something i'll look forward on fixing is why on desktop view the containers with the class name "boxList" on the "desktopOnly" div tag won't show properly alligned with the same group of "boxList" on the left, it could be a problem with the images being of different resolution and being resized with the class.
 
-special thanks to the tuthor, Nicolas Viola, for the corrections given during this course,
+special thanks to the tuthor, Nicolas Viola, for the corrections given during this course.
